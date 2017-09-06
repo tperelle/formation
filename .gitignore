@@ -2,3 +2,8 @@
 
 .vagrant/
 .DS_Store
+main.yml
+main.retry
+.gitignore
+.gitattributes
+ansible.cfg
