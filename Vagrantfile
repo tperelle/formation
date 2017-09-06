@@ -1,7 +1,13 @@
 # -*- mode: ruby -*-
 # # vi: set ft=ruby :
 
-# Cluster de 3 VM Ubuntu sur 192.168.33.xx
+# Cluster Docker
+#
+# Single box for all cluster nodes
+#
+# NOTE: Make sure you have Ansible installed for provisionning
+
+# Cluster de 4 VM Ubuntu sur 192.168.33.xx
 Vagrant.configure("2") do |config|
   
   # Box
