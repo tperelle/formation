@@ -1,8 +1,0 @@
-# Ansible provision
----
-- hosts: all
-  tasks:
-    - name: Test ansible provisioner
-      command: hostname
-
-
