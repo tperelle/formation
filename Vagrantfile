@@ -15,10 +15,10 @@ Vagrant.configure("2") do |config|
   # SSH
   config.ssh.insert_key = false
   
-  # Provisioner
+  # Common provisioning
   config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
-    ansible.playbook = "provision.yml"
+    ansible.playbook = "common_provision.yml"
   end
 
   # VMs : 3 nodes and 1 master
