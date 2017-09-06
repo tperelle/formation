@@ -7,7 +7,7 @@
 #
 # NOTE: Make sure you have Ansible installed for provisionning
 
-# Cluster de 4 VM Ubuntu sur 192.168.33.xx
+# A cluster of 4 Ubuntu VMs on 192.168.33.xx
 Vagrant.configure("2") do |config|
   
   # Box
@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
     ansible.playbook = "provision.yml"
   end
 
-  # VMs
+  # VMs : 3 nodes and 1 master
   config.vm.define "node1" do |node1|
     node1.vm.network "private_network", ip: "192.168.33.1"
     node1.vm.hostname = "node-1"
