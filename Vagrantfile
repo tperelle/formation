@@ -2,7 +2,6 @@
 # # vi: set ft=ruby :
 
 # Cluster Docker
-#
 # Single box for all cluster nodes
 #
 # NOTE: Make sure you have Ansible installed for provisionning
