@@ -14,9 +14,7 @@ Vagrant.configure("2") do |config|
   
   # SSH
   config.ssh.insert_key = false
-  #config.ssh.keys_only = false
-  #config.ssh.private_key_path = "/Users/thomas/.ssh/id_rsa"
-
+  
   # Provisioner
   config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
