@@ -37,5 +37,9 @@ Vagrant.configure("2") do |config|
   config.vm.define "master", primary: true do |master|
     master.vm.network "private_network", ip: "192.168.33.10"
     master.vm.hostname = "master"
+    master.vm.provision :ansible do |ansible|
+      ansible.verbose = "v"
+      ansible.playbook = "playbooks/master_provision.yml"
+    end
   end
 end
