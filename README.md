@@ -17,6 +17,7 @@ Pour créer/démarrer l'environnement :
 Pour vérifier que toutes les VM sont démarrées :
 `vagrant global-status`
 
+### Inventaire
 Un fichier d'inventaire Ansible est auto-généré à l'initialisation dans :
 
 `cat .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory`
