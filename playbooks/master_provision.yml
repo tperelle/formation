@@ -1,0 +1,5 @@
+---
+# Ansible master provisioning
+- hosts: all
+  - tasks:
+

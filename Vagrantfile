@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
   # Common provisioning
   config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
-    ansible.playbook = "common_provision.yml"
+    ansible.playbook = "playbooks/common_provision.yml"
   end
 
   # VMs : 3 nodes and 1 master
