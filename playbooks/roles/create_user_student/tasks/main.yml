@@ -4,5 +4,6 @@
   user:
     name: student
     password: "{{ 'student' | password_hash('sha512') }}"
+    shell: /bin/bash
     update_password: on_create
   become: true
