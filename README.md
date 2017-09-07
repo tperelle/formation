@@ -4,10 +4,13 @@ L'objectif est de provisionner l'environnement de travail de départ nécessaire
 
 Dans le cas présent on crée l'environnement sur la machine locale en utilisant Vagrant comme `provider` de VM (via VirtualBox) et Ansible comme `provisioner`.
 
+*A noter qu'il faut que Ansible soit installé au préalable sur la machine locale*
+
 Le cluster est constitué de 4 VM Ubuntu :
 - un master
 - 3 noeuds
 
+## Démarrage
 Pour démarrer l'environnement :
 `vagrant up`
 
@@ -27,4 +30,7 @@ node2 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2200 ansible_ssh_user='vagrant
 node3 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2201 ansible_ssh_user='vagrant' ansible_ssh_private_key_file='~/.vagrant.d/insecure_private_key'
 ```
 
+## Arrêt
+Pour arrêter l'environnement :
+`vagrant destroy`
 
