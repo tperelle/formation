@@ -19,8 +19,7 @@ Pour vérifier que toutes les VM sont démarrées :
 
 ### Inventaire
 Un fichier d'inventaire Ansible est auto-généré à l'initialisation dans :
-
-`cat .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory`
+`.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory`
 
 Voici son contenu :
 ```
