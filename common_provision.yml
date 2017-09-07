@@ -1,8 +1,9 @@
-# Ansible provision
 ---
+# Ansible common provisioning
 - hosts: all
   tasks:
-    - name: Test ansible provisioner
-      command: hostname
 
-
+    - name: Create user student
+      user:
+        name: student
+      become: true
