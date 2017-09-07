@@ -8,13 +8,10 @@
 
 # A cluster of 4 Ubuntu VMs on 192.168.33.xx
 Vagrant.configure("2") do |config|
-  
+
   # Box
   config.vm.box = "ubuntu/trusty64"
-  
-  # SSH
-  config.ssh.insert_key = false
-  
+
   # Common provisioning
   config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
@@ -36,7 +33,7 @@ Vagrant.configure("2") do |config|
     node3.vm.network "private_network", ip: "192.168.33.13"
     node3.vm.hostname = "node-3"
   end
-  
+
   config.vm.define "master", primary: true do |master|
     master.vm.network "private_network", ip: "192.168.33.10"
     master.vm.hostname = "master"
