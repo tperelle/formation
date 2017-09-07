@@ -6,4 +6,6 @@
     - name: Create user student
       user:
         name: student
+        password: "{{ 'student' | password_hash('sha512') }}"
+        update_password: on_create
       become: true
