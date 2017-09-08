@@ -1,9 +1,0 @@
----
-
-- name: Install Ansible
-  package:
-    name: ansible
-    state: latest
-  become: true
-  environment:
-    ANSIBLE_HOST_KEY_CHECKING: False

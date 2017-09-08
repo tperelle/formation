@@ -3,5 +3,4 @@
 - hosts: all
 
   roles:
-    - install_ansible
-    - install_docker
+    - install_component
