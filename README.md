@@ -39,6 +39,9 @@ Le provisionning commun, appliqué sur l'ensemble des VM (node ou master), réal
 
 ### Provisionning master
 Le provisionning du master réalise les opérations suivantes :
+* Installation de `Ansible`
+* Installation de `Docker`
+* Ajout de l'utilisateur `student` au groupe `docker`
 
 ## Arrêt
 Pour arrêter l'environnement :
