@@ -1,4 +1,7 @@
 ---
 # Ansible master provisioning
 - hosts: all
-#  - roles:
+
+  roles:
+    - install_ansible
+    - install_docker

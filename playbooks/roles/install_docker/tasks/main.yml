@@ -1,0 +1,13 @@
+---
+
+- name: Install Docker
+  package:
+    name: docker.io
+    state: latest
+  become: true
+
+- name: Add user student to docker group
+  user:
+    name: student
+    groups: sudo,docker
+  become: true
