@@ -36,12 +36,12 @@ Lors de la création des Vms, des playbooks Ansible sont appelés pour le provis
 ### Provisionning commun
 Le provisionning commun, appliqué sur l'ensemble des VM (node ou master), réalise les opérations suivantes :
 * Création de l'utilisateur `student`
+* Installation de `Docker` à partir des repo Docker (et non Ubuntu)
+* Ajout de l'utilisateur `student` aux groupes `sudo` et `docker`
 
 ### Provisionning master
 Le provisionning du master réalise les opérations suivantes :
 * Installation de `Ansible`
-* Installation de `Docker`
-* Ajout de l'utilisateur `student` au groupe `docker`
 
 ## Arrêt
 Pour arrêter l'environnement :
