@@ -3,3 +3,4 @@
 - hosts: all
   roles:
     - create_user_student
+    - install_docker
