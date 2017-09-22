@@ -1,0 +1,28 @@
+---
+
+- name: Install repository Key
+  command: "apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D"
+  become: true
+
+- name: Declare Docker repository
+  copy:
+    src: "{{ DOCKER_REPO_SRC_FILE }}"
+    dest: "{{ DOCKER_REPO_DEST_FILE }}"
+  become: true
+
+- name: Update repositories
+  command: "apt-get update"
+  become: true
+
+- name: Install Docker
+  apt:
+     name: docker-engine
+     state: latest
+     update_cache: yes
+  become: true
+
+- name: Add user student to docker group
+  user:
+    name: student
+    groups: sudo,docker
+  become: true
