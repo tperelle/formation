@@ -3,4 +3,4 @@
 - hosts: all
 
   roles:
-    - install_component
+    - install_ansible
