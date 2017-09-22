@@ -6,15 +6,18 @@ Dans le cas présent on crée l'environnement sur la machine locale en utilisant
 
 *A noter qu'il faut que Ansible soit installé au préalable sur la machine locale*
 
-Le cluster est constitué de 4 VM Ubuntu :
+Le cluster est constitué de 4 VM Ubuntu 16.04 :
 - un master
 - 3 nodes
 
 ## Création/Démarrage
-Pour créer/démarrer l'environnement :
+Pour créer/démarrer l'environnement complet :
 `vagrant up`
 
-Pour vérifier que toutes les VM sont démarrées :
+Pour créer/démarrer un seul noeud :
+`vagrant up master/node[1-3]`
+
+Pour vérifier l'état des VM :
 `vagrant global-status`
 
 ### Inventaire
@@ -44,6 +47,8 @@ Le provisionning du master réalise les opérations suivantes :
 * Installation de `Ansible`
 
 ## Arrêt
-Pour arrêter l'environnement :
+Pour arrêter l'environnement complet :
 `vagrant destroy`
 
+Pour arrêter un noeud :
+`vagrant destroy master/node[1-3]`
