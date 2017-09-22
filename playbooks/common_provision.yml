@@ -1,6 +1,9 @@
 ---
 # Ansible common provisioning
 - hosts: all
+  gather_facts: False
+
   roles:
+    - install_python
     - create_user_student
     - install_docker
