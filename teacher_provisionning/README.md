@@ -1,4 +1,4 @@
-# cluster_docker
+# teacher_provisionning
 
 L'objectif est de provisionner l'environnement de travail de départ nécessaire au déroulement des formations officielles Docker.
 
