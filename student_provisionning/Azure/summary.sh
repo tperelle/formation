@@ -20,8 +20,9 @@ echo "Machines virtuelles :" >> $SUMMARY_FILE
 vm=$(az vm list --resource-group $AZURE_RESSOURCES_GROUP --query "[*].[name]" --out tsv)
 for i in $vm
 do
-  ip=$(az network public-ip show -g $AZURE_RESSOURCES_GROUP -n ${i}PublicIP --query "[ipAddress]" --out tsv)
-  echo "$i $ip" >> $SUMMARY_FILE
+  IPpub=$(az network public-ip show -g $AZURE_RESSOURCES_GROUP -n ${i}PublicIP --query "[ipAddress]" --out tsv)
+  IPpriv=$(az network nic show -g $AZURE_RESSOURCES_GROUP -n ${i}VMNic --query 'ipConfigurations[0].{PrivateAddress:privateIpAddress}' --out tsv)
+  echo "$i $IPpub $IPpriv" >> $SUMMARY_FILE
 done
 
 echo " " >> $SUMMARY_FILE
