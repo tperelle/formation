@@ -12,7 +12,7 @@ export AZURE_RESSOURCES_GROUP="$FORM_TEACHER_NAME-Form-$FORM_NAME"
 export AZURE_LOCATION="westeurope"
 
 # Azure VM settings
-export AZURE_VM_IMAGE="ubuntults"
+export AZURE_VM_IMAGE="UbuntuLTS"
 export AZURE_VM_USER="student"
 export AZURE_VM_PUBLIC_KEY="~/.ssh/id_rsa_formation.pub"
-export AZURE_VM_NAME="vm1"
+export AZURE_VM_SIZE="Standard_A1"
