@@ -28,4 +28,4 @@ do
   let "itStudent+=1"
 done
 
-source summary.sh
+./summary.sh
