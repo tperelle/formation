@@ -21,10 +21,10 @@ Exemple de résumé :
 #######################################################
 
 Machines virtuelles :
-LBN-student1-node0 52.233.129.74
-LBN-student1-node1 52.233.194.61
-LBN-student1-node2 52.178.64.114
-LBN-student1-node3 52.233.195.40
+LBN-student1-node0 52.233.129.74 10.0.0.4
+LBN-student1-node1 52.233.194.61 10.0.0.5
+LBN-student1-node2 52.178.64.114 10.0.0.6
+LBN-student1-node3 52.233.195.40 10.0.0.7
 ```
 
 ## Connexion
