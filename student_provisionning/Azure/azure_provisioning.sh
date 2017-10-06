@@ -24,10 +24,13 @@ do
      --image $AZURE_VM_IMAGE \
      --admin-username $AZURE_VM_USER \
      --ssh-key-value $AZURE_VM_PUBLIC_KEY \
-     --size $AZURE_VM_SIZE
+     --size $AZURE_VM_SIZE \
+     --vnet-name $AZURE_VNET
 
     let "itVm+=1"
   done
 
   let "itStudent+=1"
 done
+
+source summary.sh
