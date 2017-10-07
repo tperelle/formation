@@ -4,8 +4,8 @@
 export FORM_NAME="LBN"
 export FORM_TEACHER_NAME="Thomas"
 export FORM_TEACHER_MAIL="t.perelle@treeptik.fr"
-export FORM_STUDENT_NUMBER=1
-export FORM_STUDENT_VM_NB=4
+export FORM_STUDENT_NUMBER=2
+export FORM_STUDENT_VM_NB=1
 
 # Azure ressources group settings
 export AZURE_RESSOURCES_GROUP="$FORM_TEACHER_NAME-Form-$FORM_NAME"
