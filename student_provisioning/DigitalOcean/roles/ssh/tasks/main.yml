@@ -1,0 +1,15 @@
+---
+
+- name: ensure ssh key exists
+  user:
+    name: "{{ ansible_user_id }}"
+    generate_ssh_key: yes
+    ssh_key_file: "{{ SSH_PUB_KEY_PATH }}"
+
+- name: ensure key exists at DigitalOcean
+  digital_ocean:
+    state: present
+    command: ssh
+    name: "{{ SSH_KEY_NAME }}"
+    ssh_pub_key: "{{ lookup('file', SSH_PUB_KEY_PATH) }}"
+  register: my_ssh_key
