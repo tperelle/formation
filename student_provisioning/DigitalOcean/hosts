@@ -1,2 +1,9 @@
-[DEFAULT]
-localhost ansible_connection=local
+[student1]
+165.227.168.166
+165.227.172.87
+[student2]
+165.227.162.79
+165.227.162.91
+[student:children]
+student1
+student2

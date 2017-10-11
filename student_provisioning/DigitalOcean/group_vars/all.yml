@@ -1,6 +1,0 @@
----
-
-  # SSH Authentication
-  SSH_PUB_KEY: "id_rsa_formation_tp.pub"
-  SSH_PUB_KEY_PATH: "~/.ssh/{{ SSH_PUB_KEY }}"
-  SSH_KEY_NAME: "tp_key"
