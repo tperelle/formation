@@ -1,0 +1,16 @@
+---
+
+  ####################### ANSIBLE ########################
+  # Directories
+  DIR_FILES: "{{ playbook_dir }}/files"
+  DIR_ROLES: "{{ playbook_dir }}/roles"
+
+  # Files
+  DOCKER_REPO_SRC_FILE: "{{ DIR_FILES }}/docker.list"
+
+  ####################### REMOTE #########################
+  # Directories
+  APT_SOURCES_LIST_DIR: "/etc/apt/sources.list.d"
+
+  # Files
+  DOCKER_REPO_DEST_FILE: "{{ APT_SOURCES_LIST_DIR }}/docker.list"

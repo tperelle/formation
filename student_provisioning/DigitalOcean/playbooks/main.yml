@@ -1,0 +1,8 @@
+---
+
+- hosts: student
+  gather_facts: False
+
+  roles:
+    - install_python
+    - install_docker
