@@ -2,6 +2,7 @@
 
 - hosts: student
   gather_facts: False
+  remote_user: root
 
   roles:
     - install_python
