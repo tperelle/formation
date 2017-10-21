@@ -1,0 +1,9 @@
+---
+
+- name: Copy Docker EE installation script
+  copy:
+    src: "{{ DOCKER_EE_INSTALL_SCRIPT }}"
+    dest: /home/treeptik/
+    owner: treeptik
+    group: treeptik
+    mode: 0755

@@ -1,0 +1,15 @@
+---
+
+- name: Set authorized key took from file
+  authorized_key:
+    user: treeptik
+    state: present
+    key: "{{ lookup('file', '/Users/thomas/.ssh/id_rsa_formation_tp.pub') }}"
+
+- name: Copy formation private key
+  copy:
+    src: ~/.ssh/id_rsa_formation_tp
+    dest: /home/treeptik/.ssh
+    owner: treeptik
+    group: treeptik
+    mode: 0600

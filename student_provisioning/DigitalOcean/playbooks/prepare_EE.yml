@@ -5,5 +5,5 @@
   remote_user: root
 
   roles:
-    - install_python
-    - install_docker
+    - authorized_keys
+    - installation_script

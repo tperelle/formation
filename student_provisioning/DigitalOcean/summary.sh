@@ -18,7 +18,9 @@ echo " " >> $SUMMARY_FILE
 # Environment summary
 echo "Machines virtuelles :" >> $SUMMARY_FILE
 doctl compute droplet list | grep $DO_DROPLET_PREFIX >> $SUMMARY_FILE
-
 echo " " >> $SUMMARY_FILE
 
+# Print summary
 cat $SUMMARY_FILE
+
+# Refresh Ansible inventory

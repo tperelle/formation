@@ -13,8 +13,9 @@ do
   itVm=0
   while (( $itVm < $FORM_STUDENT_VM_NB ))
   do
-    DROPLET_NAME="$DO_DROPLET_PREFIX-student$itStudent-node$itVm"
-    doctl compute droplet create $DROPLET_NAME --region $DO_REGION --image $DO_IMAGE_ID --size $DO_SIZE
+    DROPLET_NAME="$DO_DROPLET_PREFIX-student$itStudent-node-$itVm"
+    doctl compute droplet create $DROPLET_NAME --region $DO_REGION \
+    --image $DO_IMAGE_ID --size $DO_SIZE --ssh-keys $DO_SSH_KEY
 
     let "itVm+=1"
   done

@@ -1,0 +1,9 @@
+---
+
+- hosts: student
+  gather_facts: False
+  remote_user: root
+
+  roles:
+    - authorized_keys
+    - install_docker_yum
