@@ -47,7 +47,8 @@ do
   let "itStudent+=1"
 done
 
-# echo "[student:vars]" >> $ANSIBLE_HOST_FILE
-# echo "ansible_ssh_private_key_file=$ANSIBLE_SSH_KEY" >> $ANSIBLE_HOST_FILE
-# echo "ansible_become_user=$ANSIBLE_REMOTE_USER" >> $ANSIBLE_HOST_FILE
-# echo "ansible_become_pass=$ANSIBLE_REMOTE_PASSWD" >> $ANSIBLE_HOST_FILE
+# Execute playbook
+sleep 30s
+cd playbooks/
+ansible-playbook prepare_fundamentals.yml
+cd -
