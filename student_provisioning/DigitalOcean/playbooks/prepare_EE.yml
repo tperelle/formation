@@ -1,9 +1,13 @@
 ---
 
 - hosts: student
+  strategy: free
   gather_facts: False
   remote_user: root
 
   roles:
     - authorized_keys
     - installation_script
+    - install_packages_yum
+    - install_docker-compose
+    - update_treeptik_user

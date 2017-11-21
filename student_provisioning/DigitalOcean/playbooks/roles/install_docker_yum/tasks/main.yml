@@ -1,6 +1,6 @@
 ---
 
-- name: Install required packages
+- name: Install Docker dependencies
   yum:
     name: "{{ item }}"
     state: present
@@ -8,7 +8,6 @@
   - yum-utils
   - device-mapper-persistent-data
   - lvm2
-  - vim
 
 - name: Add stable repository
   command: "yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo"
@@ -22,8 +21,3 @@
   systemd:
     name: docker
     state: started
-
-- name: Add user treeptik to docker group
-  user:
-    name: treeptik
-    groups: wheel,docker

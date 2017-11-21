@@ -1,0 +1,13 @@
+---
+
+# password_hash requires the passlib python module to generate password hashes on Mac OS X/Darwin
+- name: Set treeptik user password
+  user:
+    name: treeptik
+    password: "{{ 'treeptik' | password_hash('sha512') }}"
+    update_password: always
+
+- name: Add user treeptik to docker group
+  user:
+    name: treeptik
+    groups: wheel,docker
