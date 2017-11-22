@@ -8,6 +8,7 @@
   # Files
   DOCKER_REPO_SRC_FILE: "{{ DIR_FILES }}/docker.list"
   DOCKER_EE_INSTALL_SCRIPT: "{{ DIR_FILES }}/install_docker_EE_CentOS.sh"
+  DOCKERCOINS_COMPOSE_FILE: "{{ DIR_FILES }}/dockercoins-compose.yml"
 
   ####################### REMOTE #########################
   # Directories
