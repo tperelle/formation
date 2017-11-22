@@ -7,3 +7,11 @@
     owner: treeptik
     group: treeptik
     mode: 0755
+
+- name: Copy dockercoins stack
+  copy:
+    src: "{{ DOCKERCOINS_COMPOSE_FILE }}"
+    dest: /home/treeptik/
+    owner: treeptik
+    group: treeptik
+    mode: 0755
