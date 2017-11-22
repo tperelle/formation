@@ -10,4 +10,4 @@
     - installation_script
     - install_packages_yum
     - install_docker-compose
-    - update_treeptik_user
+    #- update_treeptik_user
