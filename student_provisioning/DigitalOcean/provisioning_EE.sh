@@ -57,3 +57,9 @@ do
 
   let "itStudent+=1"
 done
+
+# Execute playbook
+sleep 30s
+cd playbooks/
+ansible-playbook prepare_EE.yml
+cd -
