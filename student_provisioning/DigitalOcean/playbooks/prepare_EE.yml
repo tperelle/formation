@@ -7,7 +7,7 @@
 
   roles:
     - authorized_keys
-    - installation_script
+    - upload_files
     - install_packages_yum
     - install_docker-compose
     #- update_treeptik_user
