@@ -1,6 +1,6 @@
 # local_provisionning
 
-L'objectif est de provisionner l'environnement de travail de départ nécessaire au déroulement des formations officielles Docker.
+L'objectif est de provisionner l'environnement de travail de départ nécessaire pour jouer en local la formatione officielle Docker Fundamentals. Cela permet également de pouvoir lancer rapidement une ou plusieurs VM avec Docker installé pour faire des tests ou une démo.
 
 Dans le cas présent on crée l'environnement sur la machine locale en utilisant Vagrant comme `provider` de VM (via VirtualBox) et Ansible comme `provisioner`.
 
