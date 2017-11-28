@@ -1,4 +1,4 @@
-# local_provisionning
+# Local Provisioning
 
 L'objectif est de provisionner l'environnement de travail de départ nécessaire pour jouer en local la formatione officielle Docker Fundamentals. Cela permet également de pouvoir lancer rapidement une ou plusieurs VM avec Docker installé pour faire des tests ou une démo.
 
