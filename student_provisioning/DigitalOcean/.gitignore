@@ -1,5 +1,0 @@
-playbooks/hosts
-playbooks/*.retry
-summary.txt
-env.sh
-*.old
